@@ -1,0 +1,20 @@
+import segno
+
+profile=int(input("Please select the below options \n press 1 for Ritz \n press 2 for AKs \n press 3 for Prc \n press 4 for Meh \n press 5 for Deks \n " ))
+if profile==1:
+    qrcode = segno.make('https://github.com/ritikaagg', error='h')
+    qrcode.to_artistic(background='C:/Users/Ritika/Desktop/My_data/Images/My_pic2.jpg', target='myimage1.jpg', scale=10)
+elif profile==2:
+    qrcode = segno.make('github.com/akshaykumar-og', error='h')
+    qrcode.to_artistic(background='C:/Users/Ritika/Desktop/My_data/Images/Akshay_pic.jpg', target='myimage2.jpg', scale=10)
+elif profile==3:
+    qrcode = segno.make('https://github.com/GyandeepVerma01', error='h')
+    qrcode.to_artistic(background='C:/Users/Ritika/Desktop/My_data/Images/Prince_pic.jpg', target='myimage3.jpg', scale=10)
+elif profile==4:
+    qrcode = segno.make('https://github.com/koshtimehul5', error='h')
+    qrcode.to_artistic(background='C:/Users/Ritika/Desktop/My_data/Images/Mehul_pic.jpg', target='myimage4.jpg', scale=10)
+elif profile==5:
+    qrcode = segno.make('https://github.com/Deekshakanoongo', error='h')
+    qrcode.to_artistic(background='C:/Users/Ritika/Desktop/My_data/Images/Deksha_pic.jpg', target='myimage5.jpg', scale=10)
+else:
+    print("No profile found")
